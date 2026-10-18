@@ -1,0 +1,24 @@
+[
+     {
+       "name": "get_inventory",
+       "description": "Get the current stock level and warehouse location for a product, given its item ID.",
+       "inputSchema": {
+         "type": "object",
+         "properties": {
+           "itemId": { "type": "string", "description": "The numeric product item ID, e.g. 1024" }
+         },
+         "required": ["itemId"]
+       }
+     },
+     {
+       "name": "get_order_status",
+       "description": "Get the shipping status and estimated delivery date for a customer order, given its order ID.",
+       "inputSchema": {
+         "type": "object",
+         "properties": {
+           "orderId": { "type": "string", "description": "The order ID, e.g. A100" }
+         },
+         "required": ["orderId"]
+       }
+     }
+   ]

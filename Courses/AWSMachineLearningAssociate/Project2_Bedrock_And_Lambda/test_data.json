@@ -1,0 +1,19 @@
+{
+  "messageVersion": "1.0",
+  "agent": {
+    "name": "inventory-agent",
+    "id": "TESTAGENT",
+    "alias": "TSTALIASID",
+    "version": "DRAFT"
+  },
+  "sessionId": "test-session-1",
+  "inputText": "Is item 1024 in stock?",
+  "actionGroup": "InventoryActions",
+  "apiPath": "/inventory/{itemId}",
+  "httpMethod": "GET",
+  "parameters": [
+    { "name": "itemId", "type": "string", "value": "1024" }
+  ],
+  "sessionAttributes": {},
+  "promptSessionAttributes": {}
+}
